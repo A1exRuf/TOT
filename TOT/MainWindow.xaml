@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TOT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="TOT" Height="450" Width="800">
+    <Grid x:Name="MainGrid" Background="DarkGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File" FontSize="16">
+                <MenuItem Header="Open"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Save as"/>
+            </MenuItem>
+            <MenuItem Header="Edit" FontSize="16">
+                <MenuItem Header="Undo"/>
+                <MenuItem Header="Redo"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Rectangle Fill="Green"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Rectangle Fill="Red"/>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
+    
 </Window>
