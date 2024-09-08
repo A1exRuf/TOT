@@ -29,6 +29,12 @@ namespace TOT
                 welcomeUI.Visibility = Visibility.Hidden;
                 singleImageUI.Visibility = Visibility.Visible;
             };
+            welcomeUI.dragDrop.FileOpened += (sender, filePath) =>
+            {
+                singleImageUI.imageView.LoadImage(filePath);
+                welcomeUI.Visibility = Visibility.Hidden;
+                singleImageUI.Visibility = Visibility.Visible;
+            };
         }
     }
 }
