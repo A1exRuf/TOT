@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -13,22 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TOT.View.UserControls;
 
-namespace TOT
+namespace TOT.View.UserControls
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для WelcomeUI.xaml
+    /// </summary>
+    public partial class WelcomeUI : UserControl
     {
-        public MainWindow()
+        public WelcomeUI()
         {
             InitializeComponent();
-
-            menuBar.FileOpened += (sender, filePath) =>
-            {
-                singleImageUI.imageView.LoadImage(filePath);
-                welcomeUI.Visibility = Visibility.Hidden;
-                singleImageUI.Visibility = Visibility.Visible;
-            };
         }
     }
 }

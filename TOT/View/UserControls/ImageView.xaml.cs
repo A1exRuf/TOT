@@ -34,7 +34,6 @@ namespace TOT.View.UserControls
             bitmap.UriSource = new Uri(filePath, UriKind.Absolute);
             bitmap.CacheOption = BitmapCacheOption.OnLoad;
             bitmap.EndInit();
-
             imagePicture.Source = bitmap;
 
 

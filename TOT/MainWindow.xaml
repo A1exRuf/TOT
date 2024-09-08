@@ -7,27 +7,14 @@
         xmlns:userControls="clr-namespace:TOT.View.UserControls"
         mc:Ignorable="d"
         Title="TOT" Height="450" Width="800">
-    <Grid x:Name="MainGrid" Background="DarkGray">
+    <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="24"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <userControls:MenuBar x:Name="menuBar"/>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="64"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <userControls:ToolsMenu/>
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="20"/>
-                </Grid.RowDefinitions>
-                <userControls:ImageView x:Name="imageView" Grid.Row="0"/>
-                <userControls:Footer Grid.Row="1"/>
-            </Grid>
-        </Grid>
+        <userControls:WelcomeUI x:Name="welcomeUI" Grid.Row="1"/>
+        <userControls:SingleImageUI x:Name="singleImageUI" Grid.Row="1" Visibility="Hidden"/>
     </Grid>
     
 </Window>

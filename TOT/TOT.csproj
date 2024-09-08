@@ -64,8 +64,17 @@
     <Compile Include="View\UserControls\MenuBar.xaml.cs">
       <DependentUpon>MenuBar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UserControls\MultiImageUI.xaml.cs">
+      <DependentUpon>MultiImageUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\SingleImageUI.xaml.cs">
+      <DependentUpon>SingleImageUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\UserControls\ToolsMenu.xaml.cs">
       <DependentUpon>ToolsMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\WelcomeUI.xaml.cs">
+      <DependentUpon>WelcomeUI.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -91,7 +100,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\UserControls\MultiImageUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\SingleImageUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\UserControls\ToolsMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UserControls\WelcomeUI.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
